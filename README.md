@@ -11,11 +11,11 @@ options:
 ## Running the scripts
 
 To run both scripts you will need the following python libraries:
- - tqdm (1st script)
- - requests (1st script)
- - argparse (1st script)
- - opencv-python (2nd script)
- - pytesseract (2nd script)
+ - `tqdm` is a library that provides a progress bar for long-running tasks. (1st script)
+ - `requests` is a library that allows you to send HTTP requests using Python (1st script)
+ - `argparse` is a library that provides an easy way to write command-line tools in Python (1st script)
+ - `opencv-python` is a library that provides support for computer vision tasks using the OpenCV library (2nd script)
+ - `pytesseract` is a library that provides support for Tesseract, an open-source OCR (Optical Character Recognition) engine, in Python (2nd script)
 
 ### Running examples
 
