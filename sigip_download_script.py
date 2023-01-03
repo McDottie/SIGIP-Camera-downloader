@@ -4,7 +4,8 @@ import string
 from tqdm import tqdm
 import time
 import argparse
-
+import json 
+      
 def main():
 
     parser = argparse.ArgumentParser(prog='SIGIP Download Scrip',
@@ -20,8 +21,8 @@ def main():
 
     while (True):
         response = requests.get(URL2)
-        json = response.json()
-        items = json['features']
+        jsono = response.json()
+        items = jsono['features']
         for obj in tqdm(items):
             attrs = obj['attributes']
             if (roads is not None and attrs['estrada'] in roads) or roads is None:
@@ -34,6 +35,10 @@ def main():
                 if not os.path.exists(path):
                     os.makedirs(path)
                     open(path + name, "wb").write(response2.content)
+                
+                info_path = str(attrs['estrada']) + '/' + str(attrs['id_camera']) + '/info.json'
+                if not os.path.exists(info_path):
+                    open(info_path, "w").write(json.dumps(attrs, indent=4))
 
         time.sleep(300)
 
