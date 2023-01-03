@@ -85,7 +85,7 @@ file1 = None
 file2 = None
 
 for root, dirs, files in os.walk('.'):
-    if len(files) == 0 and len(dirs) > 1 and root.count('\\') > 1 and folder1 is None and folder2 is None:
+    if (len(files) == 0 or 'info.json' in files) and len(dirs) > 1 and root.count('\\') > 1 and folder1 is None and folder2 is None:
         folder1 = root + '\\' + dirs[-1]
         folder2 = root + '\\' + dirs[-2]
 
@@ -98,8 +98,8 @@ for root, dirs, files in os.walk('.'):
         if file1 is not None and file2 is not None:
             if filecmp.cmp(file1, file2, shallow=False):
                 spliStr = folder1.split('\\')
-                # print("At road {0}, camera {1} did not update on last download. Folder -> {2} | LastUpdate {3}".format(spliStr[1], spliStr[2], folder1, dateExtraction(file1)))
-                print("Na estrada {0} a camera {1} nao faz update desde {2}".format(spliStr[1], spliStr[2], dateExtraction(file1)))
+                print("At road {0}, camera {1} did not update on last download. Folder -> {2} | LastUpdate {3}".format(spliStr[1], spliStr[2], folder1, dateExtraction(file1)))
+                # print("Na estrada {0} a camera {1} nao faz update desde {2}".format(spliStr[1], spliStr[2], dateExtraction(file1)))
             folder1 = None
             folder2 = None
             file1 = None
