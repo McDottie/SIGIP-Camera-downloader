@@ -49,6 +49,13 @@ The second script present should be used to help determine if a camera is down. 
  - Na estrada A1 a camera 128143 nao faz update desde 07/12/2022 00:50
  - Na estrada A1 a camera 128144 nao faz update desde 07/12/2022 00:50
  - Na estrada A1 a camera 128145 nao faz update desde 07/12/2022 00:50
+ - Na estrada A20 a camera 121693 nao faz update desde 29/10/2022 01:50
+ - Na estrada A21 a camera 127040 nao faz update desde 03/02/2023 06:36
+ - Na estrada A22 a camera 122020 nao faz update desde 03/02/2023 00:29
+ - Na estrada A4 a camera 123983 nao faz update desde 18/01/2023 01:30
+ - Na estrada A4 a camera 123989 nao faz update desde 03/02/2023 07:09
+ - Na estrada A44 a camera 121721 nao faz update desde 02/02/2023 11:35
+ - Na estrada IC8 a camera 123931 nao faz update desde 05/01/2023 09:51
  - Na estrada IP2 a camera 124720 nao faz update desde N/A
  
 (Infraestruturas de portugal as said that they are broken)
