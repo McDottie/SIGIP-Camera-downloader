@@ -4,11 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-tqdm = "*"
-requests = "*"
-argparse = "*"
-opencv-python = "*"
-pytesseract = "*"
+tqdm = "==4.64.1"
+requests = "==2.28.2"
+argparse = "==1.4.0"
+opencv-python = "==4.7.0.68"
+pytesseract = "==0.3.10"
 
 [dev-packages]
 
